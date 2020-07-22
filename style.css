@@ -113,10 +113,13 @@ body {
     line-height: 52px;
 }
 
+.P-add {
+    text-align: center;
+}
 
 .add-box {
     padding: 10px;
-    width: 65%;
+    width: 60%;
     border: 1px solid rgb(219, 219, 219);
     border-right: none;
     border-radius: 3px 0px 0px 3px;
@@ -165,7 +168,6 @@ body {
 .delete-all{
     text-align: center;
     padding: 20px;
-    padding-top: 0px;
 }
 
 .delete-all button{
