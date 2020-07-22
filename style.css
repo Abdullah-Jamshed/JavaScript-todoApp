@@ -1,0 +1,190 @@
+@font-face {
+    font-family: "merri-weather";
+    src: url("./fonts/opensans/OpenSans-Regular.ttf")
+}
+
+
+body {
+    font-weight: normal;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(245, 245, 245));
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 25px auto;
+    font-family: "merri-weather";
+    box-shadow: 0 0 10px #777777;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid gainsboro;
+    user-select: none;
+    background-color: white;
+}
+
+
+
+
+
+.div1 {
+    text-align: center;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.search-box {
+    width: 65%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.search-box:focus {
+    outline: none;
+}
+
+.div2 {
+    padding: 20px;
+    border-top: 0px;
+}
+
+.todo-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.todo-list>li {
+    border-radius: 0px 4px 4px 0px;
+    box-shadow: 0 0 8px 1px #dbdbdb;
+    padding: 17px;
+    margin-top: 30px;
+    border-left: 5px solid rgb(196, 196, 196);
+    /* background-color: white; */
+}
+
+.todo-list>li:hover {
+    border: 1px solid #ececec; 
+    /* border-radius: 0px 4px 4px 0px; */
+    border-left: 5px solid rgb(182, 4, 182);
+
+}
+
+.fa{
+    display: none;
+}
+
+.todo-list>li:hover i {
+    display: inline ;
+}
+
+.list-item{
+    float: right;
+    padding: 5px;
+    font-size: 19px;
+    color: #d4d4d4;
+    cursor: pointer;
+}
+
+.list-item:hover{
+    color: #828282; 
+    font-size: 22px;
+}
+
+
+.add-div {
+    margin-top: 10px;
+}
+
+
+
+
+.add-items #hide{
+    width: 30px;
+}
+
+.add-items label {
+    line-height: 52px;
+}
+
+
+.add-box {
+    padding: 10px;
+    width: 65%;
+    border: 1px solid rgb(219, 219, 219);
+    border-right: none;
+    border-radius: 3px 0px 0px 3px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.add-box:focus {
+    outline: none;
+    border: 2px solid rgb(204, 203, 203);
+    border-right: none;
+}
+
+
+
+.add-items button {
+    height: 40px;
+    width: 75px;
+    background-color: #9361bf;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    color: white;
+}
+
+.add-items button:focus {
+    outline: none;
+
+}
+
+.add-items button:hover {
+    background-color: #b987e4;
+    cursor: pointer;
+}
+
+
+
+.edit {
+    outline: none;
+    border: none;
+    padding: 7px;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(182, 4, 182);
+}
+
+
+.delete-all{
+    text-align: center;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.delete-all button{
+    height: 40px;
+    width: 100px;
+    font-size: 17px;
+    background-color: #9361bf;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    color: white;
+}
+
+
+.delete-all button:focus {
+    outline: none;
+
+}
+
+.delete-all button:hover {
+    background-color: #b987e4;
+    cursor: pointer;
+}
