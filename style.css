@@ -3,13 +3,10 @@
     src: url("./fonts/opensans/OpenSans-Regular.ttf")
 }
 
-
 body {
     font-weight: normal;
     background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(245, 245, 245));
 }
-
-
 
 .main {
     display: flex;
@@ -25,10 +22,6 @@ body {
     background-color: white;
 }
 
-
-
-
-
 .div1 {
     text-align: center;
     background-color: #eee;
@@ -37,7 +30,8 @@ body {
 }
 
 .search-box {
-    width: 65%;
+    display: inline-block;
+    width: 100%;
     height: 40px;
     border: none;
     border-radius: 3px;
@@ -61,31 +55,29 @@ body {
 }
 
 .todo-list>li {
-    border: 1px solid transparent;
     border-radius: 0px 4px 4px 0px;
     box-shadow: 0 0 8px 1px #dbdbdb;
     padding: 17px;
     margin-top: 30px;
     border-left: 5px solid rgb(196, 196, 196);
-    /* background-color: white; */
+    border: 1px solid transparent;
 }
 
 .todo-list>li:hover {
-    border: 1px solid #ececec; 
+    border: 1px solid #ececec;
     /* border-radius: 0px 4px 4px 0px; */
     border-left: 5px solid rgb(182, 4, 182);
-
 }
 
-.fa{
+.fa {
     display: none;
 }
 
 .todo-list>li:hover i {
-    display: inline ;
+    display: inline;
 }
 
-.list-item{
+.list-item {
     float: right;
     padding: 5px;
     font-size: 19px;
@@ -93,20 +85,16 @@ body {
     cursor: pointer;
 }
 
-.list-item:hover{
-    color: #828282; 
+.list-item:hover {
+    color: #828282;
     font-size: 22px;
 }
-
 
 .add-div {
     margin-top: 10px;
 }
 
-
-
-
-.add-items #hide{
+.add-items #hide {
     width: 30px;
 }
 
@@ -134,8 +122,6 @@ body {
     border-right: none;
 }
 
-
-
 .add-items button {
     height: 40px;
     width: 75px;
@@ -147,15 +133,12 @@ body {
 
 .add-items button:focus {
     outline: none;
-
 }
 
 .add-items button:hover {
     background-color: #b987e4;
     cursor: pointer;
 }
-
-
 
 .edit {
     outline: none;
@@ -165,13 +148,12 @@ body {
     border-bottom: 1px solid rgb(182, 4, 182);
 }
 
-
-.delete-all{
+.delete-all {
     text-align: center;
     padding: 20px;
 }
 
-.delete-all button{
+.delete-all button {
     height: 40px;
     width: 100px;
     font-size: 17px;
@@ -181,13 +163,32 @@ body {
     color: white;
 }
 
-
 .delete-all button:focus {
     outline: none;
-
 }
 
 .delete-all button:hover {
     background-color: #b987e4;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .div1, .div2 h1 {
+        margin: 0px;
+    }
+    .main {
+        margin: 0px;
+        width: 100%;
+    }
+    .todo-list>li {
+        margin-top: 10px;
+        padding: 15px;
+    }
+    .todo-list {
+        padding: 0px;
+    }
+    /* .search-box{
+        display: inline-block;
+        width: 100%;
+    } */
 }
